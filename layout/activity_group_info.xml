@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingHorizontal="12dp"
+    android:background="@mipmap/timge"
+    android:orientation="vertical"
+    tools:context="com.android.lost.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="社团名称"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:text="占位用的"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:text="加入社团" />
+
+        <Button
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:text="我要留言" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#E7E7E7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="12dp"
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
